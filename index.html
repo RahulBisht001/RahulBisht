@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Personal portfolio</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<script
+		src="https://kit.fontawesome.com/ea26e84072.js"
+		crossorigin="anonymous"
+	></script>
+	<body>
+		<!-- ******************************************************** -->
+
+		<div id="header">
+			<!-- Navigation Menu  -->
+			<div class="container">
+				<nav>
+					<img src="Images/logo.png" ; alt="LOGO" class="logo" />
+					<ul id="sidemenu">
+						<li><a href="#header">Home </a></li>
+						<li><a href="#about"> Skills</a></li>
+						<li><a href="#services"> Services</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li><a href="#about">About</a></li>
+						<i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+					</ul>
+					<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+				</nav>
+				<!-- Main attraction Text -->
+				<div class="header-text">
+					<p>Web Developer</p>
+					<h1>Hi ,I'm <span>Rahul</span></h1>
+					<p>Java / C / C++ Programmer</p>
+				</div>
+			</div>
+		</div>
+		<!-- <hr class="line" /> -->
+		<!-- ABout Section : Rahul Bisht-->
+		<div id="about">
+			<div class="container">
+				<div class="row">
+					<div class="about_col1">
+						<img src="images/RahulB.png" alt="" />
+					</div>
+					<div class="about_col2">
+						<h1 class="subTitle">About Me</h1>
+						<br />
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, in.
+							In quam quidem magni nam dolorum aliquam accusamus ipsa earum!
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Similique, ratione.
+						</p>
+
+						<div class="tab_title">
+							<p class="tab_links active_link" onclick="opentab('skills')">
+								Skills
+							</p>
+							<p class="tab_links" onclick="opentab('experience')">
+								Experience
+							</p>
+							<p class="tab_links" onclick="opentab('education')">Education</p>
+						</div>
+						<!--******* Skill Section  ******** -->
+						<div class="tab_contents active_tab" id="skills">
+							<ul>
+								<li>
+									<span>Java Developer</span><br />Data Structure and Algorithm
+									<br />Object Oriented Programming
+								</li>
+								<li><span>UI/UX</span><br />Designed Web Apps</li>
+								<li>
+									<span>Web Developer</span><br />React.Js <br />Node.Js
+									<br />MongoDB / My SQL
+								</li>
+							</ul>
+						</div>
+						<!--******* Experience  ******** -->
+						<div class="tab_contents" id="experience">
+							<ul>
+								<li>
+									<span>Web Development Intern</span><br />Vedantu Pvt.Ltd
+								</li>
+								<li><span>DSA Mentor</span><br />Geeks for Geeks</li>
+								<li><span>Campus Ambassador</span><br />Coding Ninja</li>
+							</ul>
+						</div>
+						<!--******* Education  ******** -->
+						<div class="tab_contents" id="education">
+							<ul>
+								<li>
+									<span>2021-2025</span><br />B.tech From Graphic Era Hill
+									University
+								</li>
+								<li><span>2020</span><br />Intermediate : 91.2%</li>
+								<li><span>2018</span><br />HighSchool : 97.4%</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Of about Section -->
+		<!-- <hr color="white" /> -->
+
+		<!--  **************   SERVICEs  ************** -->
+		<div id="services">
+			<div class="container">
+				<h1 class="subTitle">My Services</h1>
+				<div class="services_list">
+					<div>
+						<i class="fa-solid fa-code"></i>
+						<h2>Web Development</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+							delectus amet expedita repellat. Repellendus quod nam, tenetur
+							modi ipsam earum est consequatur quas omnis aperiam facere
+							nostrum, nihil aliquam nulla?
+						</p>
+						<a href="#">Know more</a>
+					</div>
+					<div>
+						<i class="fa-sharp fa-solid fa-crop-simple"></i>
+						<h2>UI/ UX Design</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+							delectus amet expedita repellat. Repellendus quod nam, tenetur
+							modi ipsam earum est consequatur quas omnis aperiam facere
+							nostrum, nihil aliquam nulla?
+						</p>
+						<a href="#">Know more</a>
+					</div>
+					<div>
+						<i class="fa-solid fa-link"></i>
+						<h2>Blockchain Development</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+							delectus amet expedita repellat. Repellendus quod nam, tenetur
+							modi ipsam earum est consequatur quas omnis aperiam facere
+							nostrum, nihil aliquam nulla?
+						</p>
+						<a href="#">Know more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--***************** My work / Portfolio Section ************************* -->
+		<div id="portfolio">
+			<div class="container">
+				<h1 class="subTitle">My Work</h1>
+				<div class="work_list">
+					<div class="work">
+						<img src="images/work_1.jpg" />
+						<div class="layer">
+							<h3>Food delivery website</h3>
+							<p>
+								THis website is clone of Swiggy . it is just a prototype. please
+								use it and give your reviews on it
+							</p>
+							<a href="#"
+								><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+							></a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="images/work_2.png" />
+						<div class="layer">
+							<h3>Freelance UI/UX design</h3>
+							<p>
+								THis website is clone of Swiggy . it is just a prototype. please
+								use it and give your reviews on it
+							</p>
+							<a href="#"
+								><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+							></a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="images/work_3.png" />
+						<div class="layer">
+							<h3>Social Media App</h3>
+							<p>
+								THis website is clone of Swiggy . it is just a prototype. please
+								use it and give your reviews on it
+							</p>
+							<a href="#"
+								><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="btn"> See More</a>
+			</div>
+			<p id="review_Msg">
+				Please Give your reviews ❤️❤️❤️ <br />Area of Improvement ??
+			</p>
+		</div>
+		<!-- ---------------------Contact me-------------------------------- -->
+		<div id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="left_column">
+						<h1 class="subTitle">Contact Me</h1>
+						<p>
+							<i class="fa-solid fa-paper-plane"></i>contact_rahul@gmail.com
+						</p>
+						<p><i class="fa-solid fa-square-phone"></i>999-888-777</p>
+						<div class="social_media">
+							<a href="#"><i class="fa-brands fa-instagram"></i></a>
+							<a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+							<a href="https://www.linkedin.com/in/rahulb001/"
+								><i class="fa-brands fa-linkedin"></i
+							></a>
+							<a href="#"><i class="fa-brands fa-twitter"></i></a>
+							<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+							<a href="#"><i class="fa-brands fa-reddit-alien"></i></a>
+						</div>
+					</div>
+					<div class="right_column">
+						<form name="submit-to-google-sheet">
+							<input type="text" name="Name" placeholder="Your Name" required />
+							<input
+								type="text"
+								name="Phone No"
+								placeholder="Your Phone no."
+								required
+							/>
+							<input
+								type="email"
+								name="Email"
+								placeholder="Your Email"
+								required
+							/>
+							<textarea
+								name="Message"
+								rows="10"
+								placeholder="Drop you Message Here"
+							></textarea>
+							<button type="submit" class="btn btn2">Submit</button>
+						</form>
+						<span id="msg"> </span>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>Copyright ©️ RahulBisht.com</p>
+			</div>
+		</div>
+
+		<!-- ************   JavaScript  *********** -->
+		<script>
+			var tabLinks = document.getElementsByClassName("tab_links");
+			var tabContents = document.getElementsByClassName("tab_contents");
+			function opentab(tabname) {
+				for (tabLink of tabLinks) {
+					tabLink.classList.remove("active_link");
+				}
+				for (tabContent of tabContents) {
+					tabContent.classList.remove("active_tab");
+				}
+				event.currentTarget.classList.add("active_link");
+				document.getElementById(tabname).classList.add("active_tab");
+			}
+		</script>
+		<script>
+			var sidemeu = document.getElementById("sidemenu");
+			function openmenu() {
+				sidemeu.style.right = "0px";
+			}
+			function closemenu() {
+				sidemeu.style.right = "-200px";
+			}
+		</script>
+		<script>
+			const scriptURL =
+				"https://script.google.com/macros/s/AKfycbxoUUnirpM_FG9dcMrrgDrmf62epOFKpixWQQPcxUMMSz2acL16rwSGmxTEFkYGvil-/exec";
+			const form = document.forms["submit-to-google-sheet"];
+			const msg = document.getElementById("msg");
+
+			form.addEventListener("submit", (e) => {
+				e.preventDefault();
+				fetch(scriptURL, { method: "POST", body: new FormData(form) })
+					.then((response) => {
+						msg.innerHTML =
+							"Your details has been submitted . Thanks for your Review";
+						setTimeout(function () {
+							msg.innerHTML = "";
+						}, 5000);
+						form.reset();
+					})
+					.catch((error) => console.error("Error!", error.message));
+			});
+		</script>
+	</body>
+</html>
